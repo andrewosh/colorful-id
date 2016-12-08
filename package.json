@@ -1,5 +1,5 @@
 {
-  "name": "readable-id",
+  "name": "colorful-id",
   "version": "1.0.0",
   "description": "Generates a human-readabable identifier out of nouns/adjectives from WordNet",
   "main": "index.js",
