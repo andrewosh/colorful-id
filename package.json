@@ -5,8 +5,14 @@
   "main": "index.js",
   "author": "Andrew Osheroff <andrewosh@gmail.com",
   "license": "MIT",
+  "scripts": {
+    "format": "standard --fix index.js"
+  },
   "dependencies": {
     "async": "^2.1.4",
     "wordpos": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
   }
 }

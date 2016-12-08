@@ -2,9 +2,9 @@ const async = require('async')
 const WordPos = require('wordpos')
 
 function isValidWord (word) {
-  return (!/[\.\,\d\'\-\_()[\]{}*&^%$#@!]/.test(word))
-         && (word.length < 9)
-         && (word.length > 5)
+  return (!/[.,\d'\-_()[\]{}*&^%$#@!]/.test(word)) &&
+         (word.length < 9) &&
+         (word.length > 5)
 }
 
 function getValidWord (opts, searchFunc) {
@@ -23,7 +23,7 @@ function getValidWord (opts, searchFunc) {
  * Generates a random identifier out of a noun and an optional number of adjectives.
 
  * @param {object} opts - options dictionary
- * @callback cb - callback(id) 
+ * @callback cb - callback(id)
  */
 module.exports = function (opts, cb) {
   if (typeof opts === 'function') {
