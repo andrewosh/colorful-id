@@ -4,6 +4,8 @@ Generates a human-readable identifier
 This module uses the [wordpos](https://github.com/moos/wordpos) module to generate an ID that
 consists of a noun and an optional number of adjectives.
 
+**CAUTION**: [wordpos](https://github.com/moos/wordpos) pulls in a 30MB WordNet database and is *not* browserifiable.
+
 ### Installation
 ```
 npm i colorful-id
